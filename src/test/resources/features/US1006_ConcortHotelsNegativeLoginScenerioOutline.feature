@@ -1,4 +1,4 @@
-@Paralel2
+@Parallel2
 Feature: US1006 concort hotels sayfasinda farkli kullanici adlari ile negative test
 
   @CH

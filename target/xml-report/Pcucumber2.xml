@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="11" time="99.809">
-    <testcase classname="US1003 kullanici istedigi kelime icin arama yapip, sonucu test eder" name="TC07 istenen kelimenin oldugunu test etme" time="10.017">
+<testsuite errors="0" failures="5" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="11" time="46.761">
+    <testcase classname="US1003 kullanici istedigi kelime icin arama yapip, sonucu test eder" name="TC07 istenen kelimenin oldugunu test etme" time="7.065">
         <system-out>
             <![CDATA[Given kullanici "amazonUrl" sayfasina gider.................................passed
-And "armut" icin arama yapar................................................passed
-Then sonucun "armut" icerdigini test eder...................................passed
+And "iphone" icin arama yapar...............................................passed
+Then sonucun "iphone" icerdigini test eder..................................passed
 And sayfayi kapatir.........................................................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US1005 amazonda liste ile arama" name="TC09 amazonda verilen bir listeyi aratip, var olduklarini test ediniz" time="8.653">
+    <testcase classname="US1005 amazonda liste ile arama" name="TC09 amazonda verilen bir listeyi aratip, var olduklarini test ediniz" time="6.673">
         <system-out>
             <![CDATA[Given kullanici "amazonUrl" sayfasina gider.................................passed
 Then "nutella" icin arama yapar.............................................passed
@@ -19,104 +19,220 @@ Then sayfayi kapatir........................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US1005 amazonda liste ile arama" name="TC09 amazonda verilen bir listeyi aratip, var olduklarini test ediniz 2" time="9.282">
+    <testcase classname="US1005 amazonda liste ile arama" name="TC09 amazonda verilen bir listeyi aratip, var olduklarini test ediniz 2" time="6.668">
         <system-out>
             <![CDATA[Given kullanici "amazonUrl" sayfasina gider.................................passed
-Then "java" icin arama yapar................................................passed
+Then "pencil" icin arama yapar..............................................passed
 And sonuc sayisini yazdirir.................................................passed
-And sonucun "java" icerdigini test eder.....................................passed
+And sonucun "pencil" icerdigini test eder...................................passed
 Then sayfayi kapatir........................................................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US1005 amazonda liste ile arama" name="TC09 amazonda verilen bir listeyi aratip, var olduklarini test ediniz 3" time="8.737">
+    <testcase classname="US1005 amazonda liste ile arama" name="TC09 amazonda verilen bir listeyi aratip, var olduklarini test ediniz 3" time="5.965">
         <system-out>
             <![CDATA[Given kullanici "amazonUrl" sayfasina gider.................................passed
-Then "ipod" icin arama yapar................................................passed
+Then "milk" icin arama yapar................................................passed
 And sonuc sayisini yazdirir.................................................passed
-And sonucun "ipod" icerdigini test eder.....................................passed
+And sonucun "milk" icerdigini test eder.....................................passed
 Then sayfayi kapatir........................................................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US1005 amazonda liste ile arama" name="TC09 amazonda verilen bir listeyi aratip, var olduklarini test ediniz 4" time="8.028">
+    <testcase classname="US1005 amazonda liste ile arama" name="TC09 amazonda verilen bir listeyi aratip, var olduklarini test ediniz 4" time="6.519">
         <system-out>
             <![CDATA[Given kullanici "amazonUrl" sayfasina gider.................................passed
-Then "armut" icin arama yapar...............................................passed
+Then "tomatoes" icin arama yapar............................................passed
 And sonuc sayisini yazdirir.................................................passed
-And sonucun "armut" icerdigini test eder....................................passed
+And sonucun "tomatoes" icerdigini test eder.................................passed
 Then sayfayi kapatir........................................................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US1005 amazonda liste ile arama" name="TC09 amazonda verilen bir listeyi aratip, var olduklarini test ediniz 5" time="8.025">
+    <testcase classname="US1005 amazonda liste ile arama" name="TC09 amazonda verilen bir listeyi aratip, var olduklarini test ediniz 5" time="6.317">
         <system-out>
             <![CDATA[Given kullanici "amazonUrl" sayfasina gider.................................passed
-Then "Apple" icin arama yapar...............................................passed
+Then "popcorn" icin arama yapar.............................................passed
 And sonuc sayisini yazdirir.................................................passed
-And sonucun "Apple" icerdigini test eder....................................passed
+And sonucun "popcorn" icerdigini test eder..................................passed
 Then sayfayi kapatir........................................................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US1006 concort hotels sayfasinda farkli kullanici adlari ile negative test" name="TC10 Farkli kullanici isimleri ile negative test" time="9.246">
-        <system-out>
+    <testcase classname="US1006 concort hotels sayfasinda farkli kullanici adlari ile negative test" name="TC10 Farkli kullanici isimleri ile negative test" time="6.99">
+        <failure message="Unable to find element with locator By.xpath: //a[text()='Log in']&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.3', revision: '7b1ebf28ef'&#10;System info: host: 'DESKTOP-COS9NIQ', ip: '192.168.2.34', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14.1'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchElementException">
             <![CDATA[Given kullanici "CHQAUrl" sayfasina gider...................................passed
-Then CH login linkine tiklar................................................passed
-And CH username kutusuna "Manager5" yazar...................................passed
-And CH password kutusuna "Manager5!" yazar..................................passed
-And CH login butonuna basar.................................................passed
-Then giris yapilamadigini test eder.........................................passed
-And sayfayi kapatir.........................................................passed
+Then CH login linkine tiklar................................................failed
+And CH username kutusuna "Manager5" yazar...................................skipped
+And CH password kutusuna "Manager5!" yazar..................................skipped
+And CH login butonuna basar.................................................skipped
+Then giris yapilamadigini test eder.........................................skipped
+And sayfayi kapatir.........................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //a[text()='Log in']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-COS9NIQ', ip: '192.168.2.34', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14.1'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy24.click(Unknown Source)
+	at stepdefinitions.CHQAStepDefinitions.ch_login_linkine_tiklar(CHQAStepDefinitions.java:13)
+	at ✽.CH login linkine tiklar(file:///C:/Users/admin/IdeaProjects/cucumber2021_tr/src/test/resources/features/US1006_ConcortHotelsNegativeLoginScenerioOutline.feature:8)
 ]]>
-        </system-out>
+        </failure>
     </testcase>
-    <testcase classname="US1006 concort hotels sayfasinda farkli kullanici adlari ile negative test" name="TC10 Farkli kullanici isimleri ile negative test 2" time="9.301">
-        <system-out>
-            <![CDATA[Given kullanici "CHQAUrl" sayfasina gider...................................passed
-Then CH login linkine tiklar................................................passed
-And CH username kutusuna "Manager6" yazar...................................passed
-And CH password kutusuna "Manager6!" yazar..................................passed
-And CH login butonuna basar.................................................passed
-Then giris yapilamadigini test eder.........................................passed
-And sayfayi kapatir.........................................................passed
+    <testcase classname="US1006 concort hotels sayfasinda farkli kullanici adlari ile negative test" name="TC10 Farkli kullanici isimleri ile negative test 2" time="0.02">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=102.0.5005.115)&#10;Build info: version: '4.1.3', revision: '7b1ebf28ef'&#10;System info: host: 'DESKTOP-COS9NIQ', ip: '192.168.2.34', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [d9582affe8a52b2dc9a025669b1428d5, get {url=https://qa-environment.concorthotel.com/}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52936}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52936/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d9582affe8a52b2dc9a025669b1428d5" type="org.openqa.selenium.NoSuchWindowException">
+            <![CDATA[Given kullanici "CHQAUrl" sayfasina gider...................................failed
+Then CH login linkine tiklar................................................skipped
+And CH username kutusuna "Manager6" yazar...................................skipped
+And CH password kutusuna "Manager6!" yazar..................................skipped
+And CH login butonuna basar.................................................skipped
+Then giris yapilamadigini test eder.........................................skipped
+And sayfayi kapatir.........................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-COS9NIQ', ip: '192.168.2.34', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d9582affe8a52b2dc9a025669b1428d5, get {url=https://qa-environment.concorthotel.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52936}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52936/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d9582affe8a52b2dc9a025669b1428d5
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:330)
+	at stepdefinitions.amazonStepDefinitions.kullaniciSayfasinaGider(amazonStepDefinitions.java:72)
+	at ✽.kullanici "CHQAUrl" sayfasina gider(file:///C:/Users/admin/IdeaProjects/cucumber2021_tr/src/test/resources/features/US1006_ConcortHotelsNegativeLoginScenerioOutline.feature:7)
 ]]>
-        </system-out>
+        </failure>
     </testcase>
-    <testcase classname="US1006 concort hotels sayfasinda farkli kullanici adlari ile negative test" name="TC10 Farkli kullanici isimleri ile negative test 3" time="9.2">
-        <system-out>
-            <![CDATA[Given kullanici "CHQAUrl" sayfasina gider...................................passed
-Then CH login linkine tiklar................................................passed
-And CH username kutusuna "Manager7" yazar...................................passed
-And CH password kutusuna "Manager7!" yazar..................................passed
-And CH login butonuna basar.................................................passed
-Then giris yapilamadigini test eder.........................................passed
-And sayfayi kapatir.........................................................passed
+    <testcase classname="US1006 concort hotels sayfasinda farkli kullanici adlari ile negative test" name="TC10 Farkli kullanici isimleri ile negative test 3" time="0.018">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=102.0.5005.115)&#10;Build info: version: '4.1.3', revision: '7b1ebf28ef'&#10;System info: host: 'DESKTOP-COS9NIQ', ip: '192.168.2.34', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [d9582affe8a52b2dc9a025669b1428d5, get {url=https://qa-environment.concorthotel.com/}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52936}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52936/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d9582affe8a52b2dc9a025669b1428d5" type="org.openqa.selenium.NoSuchWindowException">
+            <![CDATA[Given kullanici "CHQAUrl" sayfasina gider...................................failed
+Then CH login linkine tiklar................................................skipped
+And CH username kutusuna "Manager7" yazar...................................skipped
+And CH password kutusuna "Manager7!" yazar..................................skipped
+And CH login butonuna basar.................................................skipped
+Then giris yapilamadigini test eder.........................................skipped
+And sayfayi kapatir.........................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-COS9NIQ', ip: '192.168.2.34', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d9582affe8a52b2dc9a025669b1428d5, get {url=https://qa-environment.concorthotel.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52936}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52936/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d9582affe8a52b2dc9a025669b1428d5
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:330)
+	at stepdefinitions.amazonStepDefinitions.kullaniciSayfasinaGider(amazonStepDefinitions.java:72)
+	at ✽.kullanici "CHQAUrl" sayfasina gider(file:///C:/Users/admin/IdeaProjects/cucumber2021_tr/src/test/resources/features/US1006_ConcortHotelsNegativeLoginScenerioOutline.feature:7)
 ]]>
-        </system-out>
+        </failure>
     </testcase>
-    <testcase classname="US1006 concort hotels sayfasinda farkli kullanici adlari ile negative test" name="TC10 Farkli kullanici isimleri ile negative test 4" time="9.592">
-        <system-out>
-            <![CDATA[Given kullanici "CHQAUrl" sayfasina gider...................................passed
-Then CH login linkine tiklar................................................passed
-And CH username kutusuna "Manager8" yazar...................................passed
-And CH password kutusuna "Manager8!" yazar..................................passed
-And CH login butonuna basar.................................................passed
-Then giris yapilamadigini test eder.........................................passed
-And sayfayi kapatir.........................................................passed
+    <testcase classname="US1006 concort hotels sayfasinda farkli kullanici adlari ile negative test" name="TC10 Farkli kullanici isimleri ile negative test 4" time="0.018">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=102.0.5005.115)&#10;Build info: version: '4.1.3', revision: '7b1ebf28ef'&#10;System info: host: 'DESKTOP-COS9NIQ', ip: '192.168.2.34', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [d9582affe8a52b2dc9a025669b1428d5, get {url=https://qa-environment.concorthotel.com/}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52936}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52936/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d9582affe8a52b2dc9a025669b1428d5" type="org.openqa.selenium.NoSuchWindowException">
+            <![CDATA[Given kullanici "CHQAUrl" sayfasina gider...................................failed
+Then CH login linkine tiklar................................................skipped
+And CH username kutusuna "Manager8" yazar...................................skipped
+And CH password kutusuna "Manager8!" yazar..................................skipped
+And CH login butonuna basar.................................................skipped
+Then giris yapilamadigini test eder.........................................skipped
+And sayfayi kapatir.........................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-COS9NIQ', ip: '192.168.2.34', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d9582affe8a52b2dc9a025669b1428d5, get {url=https://qa-environment.concorthotel.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52936}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52936/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d9582affe8a52b2dc9a025669b1428d5
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:330)
+	at stepdefinitions.amazonStepDefinitions.kullaniciSayfasinaGider(amazonStepDefinitions.java:72)
+	at ✽.kullanici "CHQAUrl" sayfasina gider(file:///C:/Users/admin/IdeaProjects/cucumber2021_tr/src/test/resources/features/US1006_ConcortHotelsNegativeLoginScenerioOutline.feature:7)
 ]]>
-        </system-out>
+        </failure>
     </testcase>
-    <testcase classname="US1006 concort hotels sayfasinda farkli kullanici adlari ile negative test" name="TC10 Farkli kullanici isimleri ile negative test 5" time="9.303">
-        <system-out>
-            <![CDATA[Given kullanici "CHQAUrl" sayfasina gider...................................passed
-Then CH login linkine tiklar................................................passed
-And CH username kutusuna "Manager9" yazar...................................passed
-And CH password kutusuna "Manager9!" yazar..................................passed
-And CH login butonuna basar.................................................passed
-Then giris yapilamadigini test eder.........................................passed
-And sayfayi kapatir.........................................................passed
+    <testcase classname="US1006 concort hotels sayfasinda farkli kullanici adlari ile negative test" name="TC10 Farkli kullanici isimleri ile negative test 5" time="0.023">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=102.0.5005.115)&#10;Build info: version: '4.1.3', revision: '7b1ebf28ef'&#10;System info: host: 'DESKTOP-COS9NIQ', ip: '192.168.2.34', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [d9582affe8a52b2dc9a025669b1428d5, get {url=https://qa-environment.concorthotel.com/}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52936}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52936/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d9582affe8a52b2dc9a025669b1428d5" type="org.openqa.selenium.NoSuchWindowException">
+            <![CDATA[Given kullanici "CHQAUrl" sayfasina gider...................................failed
+Then CH login linkine tiklar................................................skipped
+And CH username kutusuna "Manager9" yazar...................................skipped
+And CH password kutusuna "Manager9!" yazar..................................skipped
+And CH login butonuna basar.................................................skipped
+Then giris yapilamadigini test eder.........................................skipped
+And sayfayi kapatir.........................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-COS9NIQ', ip: '192.168.2.34', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d9582affe8a52b2dc9a025669b1428d5, get {url=https://qa-environment.concorthotel.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52936}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52936/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d9582affe8a52b2dc9a025669b1428d5
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:330)
+	at stepdefinitions.amazonStepDefinitions.kullaniciSayfasinaGider(amazonStepDefinitions.java:72)
+	at ✽.kullanici "CHQAUrl" sayfasina gider(file:///C:/Users/admin/IdeaProjects/cucumber2021_tr/src/test/resources/features/US1006_ConcortHotelsNegativeLoginScenerioOutline.feature:7)
 ]]>
-        </system-out>
+        </failure>
     </testcase>
 </testsuite>
